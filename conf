@@ -1,0 +1,7 @@
+319113856161066482573888
+266658380475159181852588039952138513624
+Format the adresses like this: 192.168.1.1,60,2000,2000,camerauser,password,live_res_1_number,live_res_2_number
+Adress,max gigabyte to save for this camera,save with x pixel height,save with x pixel wide,user of the ipc,password ipc user,live show height,live show wide,encryption_on or encryption_off
+Do not Change this line and above!
+
+192.168.2.100,30,400,400,admin,adminpw,500,400,encryption_on
