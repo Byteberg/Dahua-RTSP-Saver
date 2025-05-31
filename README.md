@@ -26,3 +26,6 @@ Configuration Tips
     Each line in the config file spawns a new process
     Consider optimizing your config for better performance
 
+License:
+Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0) license
+
