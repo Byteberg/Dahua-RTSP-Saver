@@ -28,14 +28,15 @@ class dahua_stream_multithreaded():
                 self.queobj.put(self.captureobj.read()[1],timeout=1)
                 #pipeobj.put(capture.read()[1], timeout=0)
             except Exception as X:
-                print(X)
-                print("que full" + str(time.asctime()))
+                pass
+                #print(X)
+                #print("que full" + str(time.asctime()))
 
     def gen_queue(self,buffer_size_int):
         self.queobj = queue.Queue(buffer_size)
 
     def start_video_cap(self,USERNAME,PASSWORD,ADDRESS,CHANNELSELECT,STREAMSELECT,):
-        self.captureobj =capture = cv2.VideoCapture(str("rtsp://" + USERNAME + ":" + PASSWORD + "@" + ADDRESS + '/cam/realmonitor?channel=' + CHANNELSELECT + '&subtype=' + STREAMSELECT))
+        self.captureobj  = cv2.VideoCapture(str("rtsp://" + USERNAME + ":" + PASSWORD + "@" + ADDRESS + '/cam/realmonitor?channel=' + CHANNELSELECT + '&subtype=' + STREAMSELECT))
 
     def close_obj(self):
         del self.captureobj
